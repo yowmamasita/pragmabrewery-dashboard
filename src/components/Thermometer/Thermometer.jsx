@@ -9,10 +9,6 @@ export const Thermometer = ({lowerBound, upperBound, lowestSafeTemp, highestSafe
     const highUnsafeWidth = Math.abs(upperBound-highestSafeTemp) * unitWidth;
     const safeWidth = Math.abs(highestSafeTemp-lowestSafeTemp) * unitWidth;
     const currentTempX = (currentTemp - lowerBound) * unitWidth;
-    console.log(unitWidth);
-    console.log(lowUnsafeWidth, lowestSafeTemp, lowerBound);
-    console.log(highUnsafeWidth, upperBound, highestSafeTemp);
-    console.log(safeWidth, highestSafeTemp, lowestSafeTemp);
     return (
       <svg width={maxWidth} height="50" version="1.1" xmlns="http://www.w3.org/2000/svg">
         <rect x={0} y={10} width={lowUnsafeWidth} height={30} stroke="#3498DB" fill="#3498DB" stroke-width="1"/>

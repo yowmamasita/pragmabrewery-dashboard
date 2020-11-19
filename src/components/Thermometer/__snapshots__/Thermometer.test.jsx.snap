@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<svg
+  height="50"
+  version="1.1"
+  width={600}
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect
+    fill="#3498DB"
+    height={30}
+    stroke="#3498DB"
+    stroke-width="1"
+    width={350}
+    x={0}
+    y={10}
+  />
+  <rect
+    fill="#52BE80"
+    height={30}
+    stroke="#52BE80"
+    stroke-width="1"
+    width={100}
+    x={350}
+    y={10}
+  />
+  <rect
+    fill="#E74C3C"
+    height={30}
+    stroke="#E74C3C"
+    stroke-width="1"
+    width={150}
+    x={450}
+    y={10}
+  />
+  <rect
+    fill="black"
+    height={40}
+    stroke="black"
+    stroke-width="1"
+    width={5}
+    x={375}
+    y={5}
+  />
+</svg>
+`;
