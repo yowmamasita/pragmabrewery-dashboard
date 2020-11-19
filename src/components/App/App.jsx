@@ -6,6 +6,6 @@ import {Beer} from "../Beer";
 export const App = () => {
   const {beers, getBeerTemps} = useBeerTemps();
   useEffect(()=>getBeerTemps(),[])
-  useInterval(()=>getBeerTemps(), 5000);
+  useInterval(()=>getBeerTemps(), 2000);
   return (<div><h1>PragmaBrewery Beer Temperature Dashboard</h1><div>{beers.map(beer => <Beer beer={beer}/>)}</div></div>)
 };
