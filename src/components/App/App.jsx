@@ -6,7 +6,6 @@ import {Beer} from "../Beer";
 export const App = () => {
   const {beers, getBeerTemps} = useBeerTemps();
   useEffect(()=>getBeerTemps(),[])
-  const interval = useInterval(()=>getBeerTemps(), 5000);
-    setTimeout(()=>clearInterval(interval),5000);
-  return (<div>{beers.map(beer => <Beer beer={beer}/>)}</div>)
+  useInterval(()=>getBeerTemps(), 5000);
+  return (<div><h1>PragmaBrewery Beer Temperature Dashboard</h1><div>{beers.map(beer => <Beer beer={beer}/>)}</div></div>)
 };

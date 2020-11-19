@@ -3,7 +3,7 @@ import React from 'react';
 export const Thermometer = ({lowerBound, upperBound, lowestSafeTemp, highestSafeTemp, currentTemp}) =>
   {
     const range = Math.abs(upperBound - lowerBound);
-    const maxWidth = window.innerWidth;
+    const maxWidth = 600;
     const unitWidth = maxWidth / range;
     const lowUnsafeWidth = Math.abs(lowestSafeTemp-lowerBound) * unitWidth;
     const highUnsafeWidth = Math.abs(upperBound-highestSafeTemp) * unitWidth;
