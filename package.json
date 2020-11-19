@@ -1,7 +1,20 @@
 {
   "name": "pragmabrewery-dashboard",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "Ben Sarmiento <ben.sarmiento@foodpanda.com>",
-  "license": "MIT"
+  "private": true,
+  "author": "Ben Sarmiento <me@bensarmiento.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack serve",
+    "build": "webpack --config webpack.config.js"
+  },
+  "dependencies": {
+    "react": "^17.0.1"
+  },
+  "devDependencies": {
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^5.5.1",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
