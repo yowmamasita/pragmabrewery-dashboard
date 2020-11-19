@@ -1,0 +1,7 @@
+{
+  "name": "pragmabrewery-dashboard",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ben Sarmiento <ben.sarmiento@foodpanda.com>",
+  "license": "MIT"
+}
